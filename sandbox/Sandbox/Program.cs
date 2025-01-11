@@ -18,20 +18,20 @@ class Program
         System.Console.WriteLine("Hello, my name is Mason.");
 
 
-        string firstName = "";
-        System.Console.WriteLine("Enter first Name");
-        System.Console.ReadLine(firstName);
+        //string firstName = "";
+        //System.Console.WriteLine("Enter first Name");
+        //System.Console.ReadLine(firstName);
 
 
-        if (a < 10 && b > 10)  // and
+        //if (a < 10 && b > 10)  // and
         {
 
         }
-        if (a < 10 || b > 10)  // or
+        //if (a < 10 || b > 10)  // or
         {
 
         }
-        if (a ! 10)  // not
+        //if (a ! 10)  // not
         {
 
         }
