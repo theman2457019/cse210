@@ -18,12 +18,22 @@ class Program
         double number = Double.Parse(Console.ReadLine());
         return number;
     }
+    static double SquareNumber(double number)
+    {
+        double squared = number * number; 
+        return squared;
+    }
+    static void DisplayResults(string name, double Squared)
+    {
+        System.Console.WriteLine($"{name}, the sqare of your number is {Squared}");
+    }
     static void Main(string[] args)
     {
         DisplayWelcome();
         string userName = PromptUserName();
         double number = PromptUserNumber();
-        double numberSquared = number * number;
-        System.Console.WriteLine($"{userName}, the sqare of your number is {numberSquared}");
+        double squared = SquareNumber(number);
+        DisplayResults(userName, squared);
+        
     }
 }
