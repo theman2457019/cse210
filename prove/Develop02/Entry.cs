@@ -1,17 +1,25 @@
+using System.Data;
+using System.Diagnostics.CodeAnalysis;
 using System.Security.Cryptography.X509Certificates;
+using Microsoft.VisualBasic;
 
 public class Entry
 {
-   public static string Prompt = PromptGen.Prompter();
-   public DateTime now = DateTime.Now;
-   public static string text = 
+      public string _date;
+      public string _prompt;
+      public string _text; 
    
-
-   public static void Display()
+   
+   public string GetDate()
    {
-        System.Console.WriteLine($"{DateTime.Now}");
-        System.Console.WriteLine($"{Prompt}");
-        string text = Console.ReadLine();
+      return DateTime.Now.ToString("dd/MM/yy");
+   }
+
+   public void Display()
+   {
+        System.Console.WriteLine(_date);
+        System.Console.WriteLine(_prompt);
+        System.Console.WriteLine(_text);
    }
 
     

@@ -2,7 +2,7 @@ class PromptGen
 {
      
 
-    public static string Prompter ()
+    public string GetPrompt ()
     {
         List<string> Prompts = new List<string>
         {"What was the best and worst part of your day?",
