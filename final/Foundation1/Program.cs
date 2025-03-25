@@ -10,6 +10,7 @@ class Program
         video1.AddComment("Mosh", "Great video!");
         video1.AddComment("John", "Thanks for sharing!");
         video1.AddComment("Mary", "Awesome!");
+        video1.AddComment("Jane", "I didn't understand any of that...");
 
         Video video2 = new Video("Design Patterns", "Mason", 20000, new List<Comment>());
         video2.AddComment("Bill", "Cool Vid!");
@@ -18,7 +19,6 @@ class Program
 
         Video video3 = new Video("C# Basics", "Corben", 15046, new List<Comment>());
         video3.AddComment("Morgan", "I'm learning so much!");
-        video3.AddComment("Alex", "This is great!");
         video3.AddComment("Jordan", "I'm so confused...");
 
         List<Video> videos = new List<Video>();

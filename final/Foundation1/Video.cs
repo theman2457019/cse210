@@ -7,6 +7,8 @@ class Video
     public int _duration;
     private List<Comment> comments = new List<Comment>();
     
+    
+    
 
     public Video(string _title
     , string _author, int _duration, List<Comment> _comments)
@@ -16,11 +18,16 @@ class Video
         this._duration = _duration;
         this.comments = _comments;
     }
-
+    public void AddComment(string commentor, string text)
+    {
+        Comment comment = new Comment(commentor, text);
+        comments.Add(comment);
+        int _numberOfComments = comments.Count;
+    }
     public void Display()
     {
         Console.WriteLine($"{_title}|{_author}|{_duration}");
-        Console.WriteLine("Comments:");
+        Console.WriteLine($"{comments.Count} Comments:");
         foreach (Comment comment in comments)
         {
             Console.WriteLine($"{comment.commentor}| {comment.text}");
@@ -28,10 +35,6 @@ class Video
         System.Console.WriteLine();
     }
 
-    public void AddComment(string commentor, string text)
-    {
-        Comment comment = new Comment(commentor, text);
-        comments.Add(comment);
-    }
- 
+     
 }
+ 
