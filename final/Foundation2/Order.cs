@@ -30,7 +30,7 @@ class Order
         string label = "Packing List:\n";
         foreach (Product product in _products)
         {
-            label += $"{product.GetName()} (ID: {product.GetProductId()})\n";
+            label += $"{product.GetName()} (ID: {product.GetProductId()}) x {product.GetQuantity()} \n";
         }
         return label;
     }

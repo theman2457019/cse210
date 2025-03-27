@@ -23,12 +23,12 @@ class Program
         Order order2 = new Order(order2Products, customer2);
 
         // Output the results
-        Console.WriteLine(order1.GetPackingLabel());
         Console.WriteLine(order1.GetShippingLabel());
+        Console.WriteLine(order1.GetPackingLabel());
         Console.WriteLine($"Total Cost: ${order1.GetTotalPrice()}");
         Console.WriteLine();
-        Console.WriteLine(order2.GetPackingLabel());
         Console.WriteLine(order2.GetShippingLabel());
+        Console.WriteLine(order2.GetPackingLabel());
         Console.WriteLine($"Total Cost: ${order2.GetTotalPrice()}");
     }
 }

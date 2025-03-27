@@ -38,6 +38,11 @@ class Product
         return _productid;
     }
 
+    public int GetQuantity()
+    {
+        return _quantity;
+    }
+
 
 
 
